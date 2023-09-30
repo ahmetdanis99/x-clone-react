@@ -1,3 +1,7 @@
+import { useParams } from "react-router-dom";
+
 export default function Message() {
-  return <div>Message Comp!</div>;
+  const { slug } = useParams();
+  
+  return <div>Message Comp! - {slug}</div>;
 }

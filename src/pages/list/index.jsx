@@ -1,3 +1,7 @@
+import { useParams } from "react-router-dom";
+
 export default function List() {
-  return <div>List Comp!</div>;
+
+  const { slug } = useParams();
+  return <div>List Comp! - {slug}</div>;
 }

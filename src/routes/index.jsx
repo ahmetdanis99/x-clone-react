@@ -44,14 +44,14 @@ const routes = createBrowserRouter([
         element: <Community />,
       },
       {
-        path: "/profile",
+        path: ":slug",
         element: <Profile />,
       },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
     ],
-  },
-  {
-    path: "*",
-    element: <NotFound />,
   },
 ]);
 

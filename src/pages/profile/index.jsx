@@ -1,3 +1,7 @@
+import { useParams } from "react-router-dom";
+
 export default function Profile() {
-  return <div>Profile Comp!</div>;
+  const { slug } = useParams();
+
+  return <div>Profile Comp - {slug} </div>;
 }
