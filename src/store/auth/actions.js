@@ -1,4 +1,4 @@
 import { _setCurrentAccount } from ".";
-import store from "..";
+import store from "../";
 
-export const setCurrentAccount = data => store.dispatch(_setCurrentAccount(data))
+export const setCurrentAccount = data => store.dispatch(_setCurrentAccount(data))  

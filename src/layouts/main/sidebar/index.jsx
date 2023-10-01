@@ -7,7 +7,7 @@ export default function Sidebar() {
     <aside className="w-[275px] max-h-screen min-h-screen px-2 flex flex-col">
       <Logo />
       <Menu />
-      <Account/>
+      <Account />
     </aside>
-  );
+  )
 }

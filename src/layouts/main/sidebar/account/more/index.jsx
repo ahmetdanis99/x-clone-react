@@ -2,19 +2,20 @@ import classNames from "classnames";
 import { setCurrentAccount } from "~/store/auth/actions";
 import { useAccount, useAccounts } from "~/store/auth/hooks";
 
-export default function More() {
+export default function More({ close }) {
   const currentAccount = useAccount();
   const accounts = useAccounts();
 
   return (
-    <div>
+    <>
       {accounts.map((account) => (
         <button
-        type="button"
-        disabled = {currentAccount.id === account.id}
-        onClick={() => {
-          setCurrentAccount(account)
-        }}
+          type="button"
+          disabled={currentAccount.id === account.id}
+          onClick={() => {
+            setCurrentAccount(account);
+            close();
+          }}
           className={classNames(
             "py-3 px-4 flex items-center text-left w-full transition-colors",
             {
@@ -22,15 +23,15 @@ export default function More() {
             }
           )}
         >
-          <img src={account.avatar} className="w-10 h-10 rounded-full" />
-          <div className="mx-3 text-[15px]">
-            <h6 className="font-bold">{account.fullName}</h6>
+          <img src={account.avatar} className="w-10 h-10 rounded-full" alt="" />
+          <div className="mx-3 flex-1 text-[15px]">
+            <h6 className="font-bold leading-[20px]">{account.fullName}</h6>
             <div className="text-[#71767b]">@{account.username}</div>
           </div>
           {currentAccount.id === account.id && (
             <svg
               viewBox="0 0 24 24"
-              className="mr-2 ml-auto"
+              className="mr-2 ml-3"
               width={18.75}
               height={18.75}
               fill="#00ba7c"
@@ -47,7 +48,9 @@ export default function More() {
       <button className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full text-[#e7e9ea] text-[15px] font-bold leading-[20px]">
         Hesapları yönet
       </button>
-      <button className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full text-[#e7e9ea] text-[15px]font-bold leading-[20px] ">@ahmetdanis99 hesabından çıkış yap</button>
-    </div>
+      <button className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full text-[#e7e9ea] text-[15px]font-bold leading-[20px] ">
+        @ahmetdanis99 hesabından çıkış yap
+      </button>
+    </>
   );
 }
