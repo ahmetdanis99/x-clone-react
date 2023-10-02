@@ -159,10 +159,32 @@ export const mainMenu = [
     },
   },
   {
+    path: "/verified",
+    title: "Premium",
+    icon: {
+      active: (
+        <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block">
+          <path
+            fill="#e7e9ea"
+            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+          />
+        </svg>
+      ),
+      passive: (
+        <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block">
+          <path
+            fill="#e7e9ea"
+            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+          />
+        </svg>
+      ),
+    },
+  },
+  {
     path: () => {
       return `/${store.getState()?.auth?.currentAccount?.username}`;
     },
-    title: "Profile",
+    title: "Profil",
     icon: {
       active: (
         <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block">
@@ -181,5 +203,88 @@ export const mainMenu = [
         </svg>
       ),
     },
+  },
+];
+
+export const topics = [
+  {
+    title: "Ünlüler · Gündemdekiler",
+    topic: {
+      type: "tag",
+      value: "adogukanaksu",
+    },
+    postCount: 31323,
+  },
+  {
+    title: "İş dünyası ve finans · Gündemdekiler",
+    topic: {
+      type: "query",
+      value: "Eşek Alım Satım",
+    },
+    postCount: 663,
+  },
+  {
+    title: "Türkiye tarihinde gündende",
+    topic: {
+      type: "tag",
+      value: "suribombom",
+    },
+    postCount: 3113,
+  },
+  {
+    title: "Türkiye tarihinde gündende",
+    topic: {
+      type: "tag",
+      value: "bombom",
+    },
+    postCount: 23663,
+  },
+  {
+    title: "Türkiye tarihinde gündende",
+    topic: {
+      type: "query",
+      value: "2 KULE 1 UCAK",
+    },
+    postCount: 1002113,
+  },
+  {
+    title: "İş dünyası ve finans · Gündemdekiler",
+    topic: {
+      type: "query",
+      value: "Otizmli Esek Ticareti",
+    },
+    postCount: 103663,
+  },
+  {
+    title: "Türkiye tarihinde gündende",
+    topic: {
+      type: "tag",
+      value: "cayımıvermediler",
+    },
+    postCount: 40113,
+  },
+  {
+    title: "Türkiye tarihinde gündende",
+    topic: {
+      type: "query",
+      value: "Tinted Games",
+    },
+    postCount: 32663,
+  },
+  {
+    title: "İş dünyası ve finans · Gündemdekiler",
+    topic: {
+      type: "tag",
+      value: "catigyo",
+    },
+    postCount: 66113,
+  },
+  {
+    title: "Türkiye tarihinde gündende",
+    topic: {
+      type: "query",
+      value: "Sekso Politesi Güclü Adam",
+    },
+    postCount: 80113,
   },
 ];
