@@ -7,13 +7,13 @@ export default function Button({ size, variant, children }) {
     "button",
     {
       className: classNames(
-        "rounded-full flex items-center justify-center font-bold text-white transition-colors",
+        "rounded-full flex items-center justify-center font-bold transition-colors",
         {
-          "px-4 h-8": size === "small",
+          "px-4 h-8 text-sm": size === "small",
           "px-4 h-9": size === "normal",
-          "px-4 h-[52px] text-[17px] w-full": size === "large",
-          "bg-[#1d9bf0] hover:bg-[#1a8cd8]": variant === "primary",
-          "bg-white text-[#000000]": variant === "white",
+          "px-4 h-[52px] text-[17px] w-full ": size === "large",
+          "bg-[#1d9bf0] hover:bg-[#1a8cd8] text-white": variant === "primary",
+          "bg-[#eff3f4] hover:bg-[#d7dbdc] text-black": variant === "white",
         }
       ),
     },
@@ -23,7 +23,7 @@ export default function Button({ size, variant, children }) {
 
 Button.propTypes = {
   size: PropTypes.oneOf(["small", "normal", "large"]),
-  variant: PropTypes.oneOf(["primary","white"])
+  variant: PropTypes.oneOf(["primary", "white"]),
 };
 
 Button.defaultProps = {
