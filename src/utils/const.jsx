@@ -218,10 +218,10 @@ export const topics = [
   {
     title: "İş dünyası ve finans · Gündemdekiler",
     topic: {
-      type: "query",
-      value: "Eşek Alım Satım",
+      type: "tag",
+      value: "BRLSM",
     },
-    postCount: 663,
+    postCount: 111111663,
   },
   {
     title: "Türkiye tarihinde gündende",

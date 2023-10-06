@@ -1,6 +1,7 @@
-import Topics from "~/componenets/topics";
 import Premium from "~/layouts/main/rightbar/premium";
+import Topics from "~/layouts/main/rightbar/topics";
 import Search from "./search";
+import WhoFollow from "./who-follow";
 
 export default function RightBar() {
   return (
@@ -8,6 +9,7 @@ export default function RightBar() {
       <Search />
       <Premium />
       <Topics />
+      <WhoFollow/>
     </aside>
   );
 }
