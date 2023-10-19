@@ -6,7 +6,7 @@ const initialState = {
     username: "ahmetdanis99",
     fullName: "Ahmet",
     avatar:
-      "https://pbs.twimg.com/profile_images/1394416125094551559/wSQs0TTw_400x400.jpg",
+      "https://yt3.googleusercontent.com/_QkGS-cGeFC7wDG1Jp1jyYnp4g6WFqEYIn26VHx4DvaQeVXlHlywPC_KO1bYVPkq6LIfB0-vSg=s900-c-k-c0x00ffffff-no-rj",
   },
   accounts: [
     {
@@ -14,14 +14,14 @@ const initialState = {
       username: "ahmetdanis99",
       fullName: "Ahmet",
       avatar:
-        "https://pbs.twimg.com/profile_images/1394416125094551559/wSQs0TTw_400x400.jpg",
+        "https://yt3.googleusercontent.com/_QkGS-cGeFC7wDG1Jp1jyYnp4g6WFqEYIn26VHx4DvaQeVXlHlywPC_KO1bYVPkq6LIfB0-vSg=s900-c-k-c0x00ffffff-no-rj",
     },
     {
       id: 2,
       username: "mumbarsurat99",
       fullName: "Mumbar",
       avatar:
-        "https://pbs.twimg.com/profile_images/1394416125094551559/wSQs0TTw_400x400.jpg",
+        "https://yt3.googleusercontent.com/_QkGS-cGeFC7wDG1Jp1jyYnp4g6WFqEYIn26VHx4DvaQeVXlHlywPC_KO1bYVPkq6LIfB0-vSg=s900-c-k-c0x00ffffff-no-rj",
     },
   ],
 };
