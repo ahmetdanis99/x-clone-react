@@ -21,7 +21,7 @@ export default function Topic({ item }) {
         )}
       </div>
       <Popover className="absolute top-1.5 right-2">
-        <Popover.Button className="outline-none w-[34.75px] h-[34.75px] rounded-full flex items-center justify-center hover:bg-[#1d9bf01a] hover:text-[#1d9bf0] transition-colors">
+        <Popover.Button className="outline-none w-[34.75px] h-[34.75px] rounded-full flex items-center justify-center hover:bg-[#1d9bf01a] hover:text-[color:var(--color-primary)] transition-colors">
           <svg viewBox="0 0 24 24" width={18.75}>
             <path
               fill="currentColor"
@@ -29,7 +29,7 @@ export default function Topic({ item }) {
             />
           </svg>
         </Popover.Button>
-        <Popover.Panel className="w-[384px] rounded-xl grid absolute top-2 overflow-hidden right-0 bg-black shadow-box z-[1]">
+        <Popover.Panel className="w-[384px] rounded-xl grid absolute top-2 overflow-hidden right-0 bg-[color:var(--background-primary)] shadow-box z-[1]">
           <button
             type="button"
             className="text-left py-3 px-4 hover:bg-white/[0.05] transition-colors flex items-center gap-3 text-[15px] leading-5 font-bold text-[#e7e9ea]"

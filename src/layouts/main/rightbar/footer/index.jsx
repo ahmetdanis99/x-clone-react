@@ -4,22 +4,40 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="mb-4 px-4 flex flex-wrap gap-2">
-      <Link to="/" className="text-[#71767b] leading-4 text-[13px] hover:underline">
+      <Link
+        to="/"
+        className="text-[#71767b] leading-4 text-[13px] hover:underline"
+      >
         Hizmet Şartları
       </Link>
-      <Link to="/" className="text-[#71767b] leading-4 text-[13px] hover:underline">
+      <Link
+        to="/"
+        className="text-[#71767b] leading-4 text-[13px] hover:underline"
+      >
         Gizlilik Politikası
       </Link>
-      <Link to="/" className="text-[#71767b] leading-4 text-[13px] hover:underline">
+      <Link
+        to="/"
+        className="text-[#71767b] leading-4 text-[13px] hover:underline"
+      >
         Çerez Politikası
       </Link>
-      <Link to="/" className="text-[#71767b] leading-4 text-[13px] hover:underline">
+      <Link
+        to="/"
+        className="text-[#71767b] leading-4 text-[13px] hover:underline"
+      >
         Imprint
       </Link>
-      <Link to="/" className="text-[#71767b] leading-4 text-[13px] hover:underline">
+      <Link
+        to="/"
+        className="text-[#71767b] leading-4 text-[13px] hover:underline"
+      >
         Erişilebilirlik
       </Link>
-      <Link to="/" className="text-[#71767b] leading-4 text-[13px] hover:underline">
+      <Link
+        to="/"
+        className="text-[#71767b] leading-4 text-[13px] hover:underline"
+      >
         Reklam bilgisi
       </Link>
       <div className="w-full flex gap-2">
@@ -33,34 +51,36 @@ export default function Footer() {
               />
             </svg>
           </Popover.Button>
-          <Popover.Panel className="w-[150px] absolute bottom-0 right-0 max-w-[380px] bg-black shadow-box rounded-xl grid overflow-hidden">
+          <Popover.Panel className="w-[150px] absolute bottom-0 right-0 max-w-[380px] bg-[color:var(--background-primary)] shadow-box rounded-xl grid overflow-hidden">
             <Link
               to="/"
-              className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[#16181c] transition-colors"
+              className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[color:var(--background-secondary)] transition-colors"
             >
               Hakkında
             </Link>
             <Link
               to="/"
-              className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[#16181c] transition-colors"
+              className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[color:var(--background-secondary)] transition-colors"
             >
               Durum
             </Link>
             <Link
               to="/"
-              className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[#16181c] transition-colors"
+              className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[color:var(--background-secondary)] transition-colors"
             >
               İşletmeler için X
             </Link>
             <Link
               to="/"
-              className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[#16181c] transition-colors"
+              className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[color:var(--background-secondary)] transition-colors"
             >
               Gelişticiler
             </Link>
           </Popover.Panel>
         </Popover>
-        <p className="text-[#71767b] leading-4 text-[13px]">&copy; 2023 X Corp.</p>
+        <p className="text-[#71767b] leading-4 text-[13px]">
+          &copy; 2023 X Corp.
+        </p>
       </div>
     </footer>
   );
