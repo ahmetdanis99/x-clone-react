@@ -227,7 +227,7 @@ export const topics = [
     title: "Türkiye tarihinde gündende",
     topic: {
       type: "tag",
-      value: "suribombom",
+      value: "cantexttaciz",
     },
     postCount: 3113,
   },
