@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
+import StickyHeader from "../sticky-header";
 import Content from "./content";
 import { TabContext } from "./context";
 import Item from "./item";
@@ -13,7 +14,10 @@ export default function Tab({ children, activeTab }) {
   }, [activeTab]);
 
   const contents = children.filter((c) => c.type === Content);
-  const items = children.filter((c) => c.type === Items);
+  const stickyHeader = children.filter((c) => c.type === StickyHeader);
+  const items = stickyHeader[0];
+
+  const content = contents.find((c) => c.props.id === active);
 
   const data = {
     active,
@@ -22,9 +26,9 @@ export default function Tab({ children, activeTab }) {
 
   return (
     <TabContext.Provider value={data}>
-      <div className="border-b border-[color:var(--background-third)]">
-        {items}
-      </div>
+      {items}
+
+      {content}
     </TabContext.Provider>
   );
 }

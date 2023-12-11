@@ -1,27 +1,25 @@
 import StickyHeader from "~/componenets/sticky-header";
 import Tab from "~/componenets/tab";
+import Followwings from "./followings";
+import ForYou from "./for-you";
 
 export default function Home() {
   return (
     <>
-      <StickyHeader title="Anasayfa"/>
       <Tab activeTab="for-you">
-        <Tab.Items>
-          <Tab.Item id="for-you">
-            Sana Özel
-          </Tab.Item>
-          <Tab.Item id="followings">
-            Takip edilenler
-          </Tab.Item>
-        </Tab.Items>
+        <StickyHeader title="Anasayfa">
+          <Tab.Items>
+            <Tab.Item id="for-you">Sana Özel</Tab.Item>
+            <Tab.Item id="followings">Takip edilenler</Tab.Item>
+          </Tab.Items>
+        </StickyHeader>
         <Tab.Content id="for-you">
-          1.Content
+          <ForYou />
         </Tab.Content>
         <Tab.Content id="followings">
-          2.Content
+          <Followwings />
         </Tab.Content>
       </Tab>
-      Home Comp!
     </>
   );
 }

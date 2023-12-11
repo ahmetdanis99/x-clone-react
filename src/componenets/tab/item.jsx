@@ -11,7 +11,7 @@ export default function Item({ children, id }) {
       onClick={() => {
         setActive(id);
       }}
-      className="flex-auto text-center"
+      className="flex-auto text-center hover:bg-[color:var(--background-secondary)]"
     >
       <div className={classNames("h-[3.313rem] inline-flex relative items-center",{
         "font-bold": active === id,
