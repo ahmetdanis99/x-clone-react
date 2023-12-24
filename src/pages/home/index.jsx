@@ -17,7 +17,7 @@ export default function Home() {
           <ForYou />
         </Tab.Content>
         <Tab.Content id="followings">
-          <Followwings />
+          <Followwings /  >
         </Tab.Content>
       </Tab>
     </>
